@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>F:\lgs\MyWork202505\TestProject\src\modules\user\MyProject.User.Application\MyProject.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="8.3.4" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="8.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyProject.User.Application.Contracts\MyProject.User.Application.Contracts.csproj" />
+    <ProjectReference Include="..\MyProject.User.Domain\MyProject.User.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
