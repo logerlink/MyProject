@@ -15,8 +15,10 @@ namespace MyProject.User.Application.UserInfos;
 /// 禁用日志审计和自动校验
 /// </summary>
 [DisableAuditing,DisableValidation]
+// swagger：非必须，默认值为true，如果设为false，则不会展示该service
 [RemoteService(IsEnabled = true)]
-public class UserInfoAppService : ApplicationService, IUserInfoAppService
+// swagger：必须
+public class UserInfoAppService : ApplicationService, IUserInfoAppService   // 不强制实现IUserInfoAppService，不过一般都会实现
 {
     private readonly IRepository<UserInfo, int> _userInfoRepository;
     /// <summary>
@@ -34,6 +36,7 @@ public class UserInfoAppService : ApplicationService, IUserInfoAppService
     /// 获取集合
     /// </summary>
     /// <returns></returns>
+    // swagger：必须，类或方法使用 public 公开访问
     public async Task<List<UserInfoDto>> GetListAsync()
     {
         var models = await _userInfoRepository.GetListAsync();
@@ -49,7 +52,6 @@ public class UserInfoAppService : ApplicationService, IUserInfoAppService
         var model = await _userInfoRepository.GetAsync(id);
         return ObjectMapper.Map<UserInfo, UserInfoDto>(model);
     }
-
     public async Task<UserInfoDto> CreateAsync(CreateUserInfoDto inputDto)
     {
         var model = ObjectMapper.Map<CreateUserInfoDto, UserInfo>(inputDto);

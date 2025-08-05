@@ -23,7 +23,7 @@ namespace MyProject.User.EntityframeworkCore.Users
 
         public void MyAdd(UserInfo user)
         {
-            throw new NotImplementedException();
+            var xx = DbContext.Database;
         }
     }
 }

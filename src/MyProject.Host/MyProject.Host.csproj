@@ -5,7 +5,6 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <DocumentationFile>F:\lgs\MyWork202505\TestProject\src\MyProject.Host\MyProject.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\modules\user\MyProject.User.Application\MyProject.User.Application.csproj" />
     <ProjectReference Include="..\modules\user\MyProject.User.EntityframeworkCore\MyProject.User.EntityframeworkCore.csproj" />
   </ItemGroup>
 

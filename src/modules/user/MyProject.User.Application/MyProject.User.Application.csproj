@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <DocumentationFile>F:\lgs\MyWork202505\TestProject\src\modules\user\MyProject.User.Application\MyProject.xml</DocumentationFile>
+    <DocumentationFile>D:\Work\TestProject\src\modules\user\MyProject.User.Application\bin\Debug\net8.0\MyProject.User.Application.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

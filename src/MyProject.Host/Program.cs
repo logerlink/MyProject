@@ -1,5 +1,4 @@
 using Volo.Abp;
-using MyProject.Host;
 
 var builder = WebApplication.CreateBuilder(args);
 
