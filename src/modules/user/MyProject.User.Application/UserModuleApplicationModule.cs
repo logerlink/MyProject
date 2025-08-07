@@ -6,6 +6,7 @@ using MyProject.User.Domain;
 namespace MyProject.User.Application;
 
 [DependsOn(
+    typeof(AbpAutoMapperModule),    // 依赖automapper模块，否则automapper不生效
     typeof(UserModuleDomainModule),
     typeof(AbpDddApplicationModule)
 )]

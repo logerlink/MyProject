@@ -2,13 +2,13 @@
 
 public class UserInfoDto
 {
-    public Guid Id { get; set; }
+    public string Name { get; set; }
 
-    public string Name { get; set; } = string.Empty;
+    public string Password { get; set; }
 
-    public decimal Price { get; set; }
-
-    public int StockCount { get; set; }
+    public int Type { get; set; }
+    public string? PhoneNumber { get; set; }    // 表示字段可空
+    public DateTime CreateTime { get; set; }
 }
 
 
