@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyProject.User.Domain.UserInfos;
 using MyProject.User.Domain.Users;
-using MyProject.User.EntityFrameworkCore;
+using MyProject.User.EntityframeworkCore.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

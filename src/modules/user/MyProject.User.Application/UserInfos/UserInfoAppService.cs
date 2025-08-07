@@ -39,6 +39,7 @@ public class UserInfoAppService : ApplicationService, IUserInfoAppService   // �
     // swagger：必须，类或方法使用 public 公开访问
     public async Task<List<UserInfoDto>> GetListAsync()
     {
+        //_myUserInfoRepository.MyAdd(null);
         var models = await _userInfoRepository.GetListAsync();
         return ObjectMapper.Map<List<UserInfo>, List<UserInfoDto>>(models);
     }
