@@ -3,15 +3,16 @@ using MyProject.User.EntityFrameworkCore;   // 引用用户模块的EF层
 using Volo.Abp;
 using Volo.Abp.AspNetCore;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 
 // 必须继承 AbpModule
 [DependsOn(
-    typeof(AbpAspNetCoreModule),       // 依赖ABP核心Web模块
+    typeof(AbpAutofacModule),       // 依赖autofact模块
     typeof(AbpSwashbuckleModule),      // 依赖Swagger模块
-    typeof(UserModuleApplicationModule),      // 依赖用户应用模块
-    typeof(UserModuleEntityFrameworkCoreModule)
+    typeof(UserModuleApplicationModule),      // 依赖用户应用层
+    typeof(UserModuleEntityFrameworkCoreModule) // 依赖用户仓储层
 )]
 public class MyProjectHostModule : AbpModule
 {
