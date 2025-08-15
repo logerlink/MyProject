@@ -7,10 +7,10 @@ namespace MyProject.User.Domain.UserInfos;
 
 /**
  * abp自带的审计实体：
- * FullAuditedEntity‌：包含完整审计字段（创建时间、创建人、最后修改时间、修改人、软删除标记、删除人/时间）
- * ‌AuditedEntity‌：仅包含创建和修改审计字段（无软删除相关字段）
+ * FullAuditedEntity：包含完整审计字段（创建时间、创建人、最后修改时间、修改人、软删除标记、删除人/时间）
+ * AuditedEntity：仅包含创建和修改审计字段（无软删除相关字段）
  * Entity：仅包含Id
- * CreationAuditedEntity‌：仅包含创建时间和创建人
+ * CreationAuditedEntity：仅包含创建时间和创建人
 */
 
 /// <summary>
